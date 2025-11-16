@@ -1,0 +1,34 @@
+
+=== 2025-11-15T11:15:34.963459 ===
+Traceback (most recent call last):
+  File "e:\DATA SCIENCE PRO\Python Libraries\Hospitalmanagemnetsystem.py", line 413, in pd
+    ripple_theme(themes[current_theme]['accent'])
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\DATA SCIENCE PRO\Python Libraries\Hospitalmanagemnetsystem.py", line 245, in ripple_theme
+    fade_out(0)
+    ~~~~~~~~^^^
+  File "e:\DATA SCIENCE PRO\Python Libraries\Hospitalmanagemnetsystem.py", line 243, in fade_out
+    overlay.lift()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 3146, in tag_raise
+    self.tk.call((self._w, 'raise') + args)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: wrong # args: should be ".!canvas2 raise tagOrId ?aboveThis?"
+
+
+=== 2025-11-15T11:21:43.217050 ===
+Traceback (most recent call last):
+  File "e:\DATA SCIENCE PRO\Python Libraries\Hospitalmanagemnetsystem.py", line 413, in pd
+    ripple_theme(themes[current_theme]['accent'])
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\DATA SCIENCE PRO\Python Libraries\Hospitalmanagemnetsystem.py", line 245, in ripple_theme
+    fade_out(0)
+    ~~~~~~~~^^^
+  File "e:\DATA SCIENCE PRO\Python Libraries\Hospitalmanagemnetsystem.py", line 243, in fade_out
+    overlay.lift()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 3146, in tag_raise
+    self.tk.call((self._w, 'raise') + args)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: wrong # args: should be ".!canvas2 raise tagOrId ?aboveThis?"
+

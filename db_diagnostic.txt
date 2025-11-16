@@ -1,0 +1,58 @@
+DB diagnostic run at 2025-11-15T11:18:15.431124
+Backup created: hospital.db.bak_20251115_111815
+Opened DB successfully.
+
+PRAGMA integrity_check result:
+('ok',)
+
+Schema (sqlite_master):
+-- table audit_log (audit_log)
+CREATE TABLE audit_log (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      operator_name TEXT,
+      operator_role TEXT,
+      action TEXT,
+      ref_val TEXT,
+      ts TEXT
+    )
+
+-- table hospital (hospital)
+CREATE TABLE hospital (
+      nameoftablets TEXT,
+      Refrence TEXT,
+      dose TEXT,
+      nooftablets TEXT,
+      issuedate TEXT,
+      expdate TEXT,
+      dailydose TEXT,
+      sideeffect TEXT,
+      nameofpatient TEXT,
+      dob TEXT,
+      patientaddress TEXT
+    )
+
+-- table sqlite_sequence (sqlite_sequence)
+CREATE TABLE sqlite_sequence(name,seq)
+
+
+Tables and row counts:
+ - hospital: 2 rows
+ - audit_log: 0 rows
+
+Attempting CSV export of each table (best-effort).
+  exported hospital -> hospital_table_hospital.csv (2 rows exported)
+  exported audit_log -> hospital_table_audit_log.csv (0 rows exported)
+
+Attempting SQL dump (sqlite .dump style) to hospital_dump.sql
+SQL dump written to hospital_dump.sql
+
+Integrity is OK. Attempting VACUUM to rebuild the database file (may shrink file).
+VACUUM completed.
+
+Diagnostic finished. Look at the generated files for details:
+ - db_diagnostic.txt
+ - hospital_dump.sql (if created)
+ - hospital_table_<name>.csv (per-table CSVs)
+
+If integrity_check reported corruption or dump failed, reply here and paste the last part of db_diagnostic.txt. I'll help recover or rebuild the DB.
+If CSVs were produced, you can use them to rebuild a fresh DB (I can provide that script).
