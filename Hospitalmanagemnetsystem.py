@@ -1,10 +1,3 @@
-"""
-Hospital management (SQLite) — enhanced UI with particles, themes, operator assistant, QR, sounds, audit log.
-Dependencies:
-  pip install qrcode pillow
-Works offline using hospital.db (SQLite) in the same folder.
-"""
-
 import os
 import json
 import random
@@ -18,7 +11,6 @@ from tkinter import ttk, messagebox
 from PIL import Image, ImageTk
 import qrcode
 
-# Sound support: winsound on Windows, optional playsound fallback
 system = platform.system()
 if system == "Windows":
     try:
@@ -704,3 +696,4 @@ win.bind_all("<Key>", on_key)
 update_operator_display()
 
 win.mainloop()
+
